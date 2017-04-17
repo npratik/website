@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+    <head>
+        <meta charset="utf-8">
+        <title>Pratik Nellutla</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/app.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.js"></script>
+         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-animate.js"></script>
+        <script src="app.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css' rel='stylesheet' type='text/css'>
+
+
+        <!-- CSS
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="stylesheet" href="assets/css/bootstrap.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!-- Icons
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="stylesheet" href="assets/icons/Linea/styles.css" />
+        <link rel="stylesheet" href="assets/icons/Elegant/style.css" />
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="assets/js/modernizr.js"></script>
+    </head>
+    <body>
+<!-- Loading -->
+    <div id="loader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+        <h3 class="title-load">Loading</h3>
+    </div>
+<!-- END Loading-->
+<header id="headerBar" class="headerTop">
+
+    <div class="container-fluid">
+
+        <!--Header logo on the left side-->
+
+        <div class="col-md-4 col-sm-1 col-xs-4 headerLeft">
+        </div>
+
+        <!--Header right side with left-aligned menu-->
+
+        <div class="col-md-8 col-sm-11 col-xs-8 headerRight">
+            <div class="header-right">
+
+                <!--Navigation-->
+                <nav class="navigation">
+
+                    <div class="navbar-header">
+                  <span class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <i class="fa fa-bars"></i>
+                  </span>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                        <ul class="navbar navbar-right">
+                            <li ng-class="{active: nav.isActive('/about')}"><a href="#/about">About</a></li>
+                            <li ng-class="{active: nav.isActive('/skills')}"><a href="#/skills">Skills</a></li>
+                            <li ng-class="{active: nav.isActive('/exp')}"><a href="#/exp">Work</a></li>
+                            <li ng-class="{active: nav.isActive('/acad')}"><a href="#/acad">Academics</a></li>
+
+                            <li ng-class="{active: nav.isActive('/proj')}"><a href="#/proj">Projects</a></li>
+                            <li ng-class="{active: nav.isActive('/conn')}"><a href="#/conn">Connect</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </nav>
+                <!--END Navigation-->
+
+            </div>
+        </div>
+        <!--END Header right side-->
+
+
+    </div>
+    <!--END container-->
+</header>
+<!--END Header bar-->
+
+       <!-- <div id="headerWrapper" ng-controller="HeaderCtrl">
+            <span class="logo pull-left">{{appDetails.title}}</span>
+            <span class="tagline pull-left">{{appDetails.tagline}}</span>
+            <div class="nav-wrapper pull-left">
+                <ul class="nav nav-pills">
+                    <li ng-class="{active: nav.isActive('/about')}"><a href="#/about">About</a></li>
+                    <li ng-class="{active: nav.isActive('/skills')}"><a href="#/skills">Skills</a></li>
+
+                </ul>
+            </div>
+        </div>-->
+		
+		<div ng-view class="container"></div>
+
+
+    <!--  Javascripts
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="assets/js/jquery-2.1.3.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/modernizr.custom.js"></script>
+    <script src="assets/js/contactform.js"></script>
+    <!-- Navigation menu-->
+    <script src="assets/js/classie.js"></script>
+    <script src="assets/js/menu-top.js"></script>
+    <script src="assets/js/nav-active.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <!--JS for MAGNIFIC POPUP & ALL SCRIPTS& CALLS-->
+    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- WOW ANIMATIONS -->
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery-parallax.js"></script>
+    <!-- Masonry Package -->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/isotope-jquery.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+		
+    </body>
+</html>

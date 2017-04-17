@@ -1,0 +1,44 @@
+.hideData {
+    display:none;
+}
+
+.solidline {
+    display: block;
+    height: 3px;
+    border: 0;
+    border-top: 2px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    }	
+	
+	
+label {
+    float:center;
+    text-align:center;
+    padding-right:10px;
+}
+
+.radio1 {
+    float:center;
+}
+
+.rightalign {
+	float:right;
+}
+
+.resultsalign{
+	float:left; 
+	width:50%;
+}
+
+.tablealign{
+	overflow:scroll;
+	height:500px;
+	width:100%;
+	overflow:auto;
+}
+
+.graphalign{
+	width: 500px; 
+	height: 500px;
+}
